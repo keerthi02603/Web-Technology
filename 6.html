@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>JS Demo</title>
+<script language="javascript">
+function f1()
+{
+alert("hello everybody");
+
+function f2()
+{
+document.getElementById("myImage").src="Snapchat-909984368.jpg";
+}
+function f3()
+{
+if(confirm("Are you sure to unload image?"))
+{
+document.getElementById("myImage").src=" ";
+}
+}
+}
+</script>
+</head>
+<body>
+<center>
+<input type=button value="Great All" style="font-size:32px" on click="f1()">
+<input type=button value="Load Image" style="font-size:32px" on click="f2()">
+<input type=button value="Unload Image" style="font-size:32px" on click="f3()">
+<br><img width=250 id="myImage">
+</center>
+</body>
+</html>

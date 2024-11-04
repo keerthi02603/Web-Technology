@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+.mybutton{
+background-color:black;
+border-radius:70%;
+font-size:32px;
+width:50px;
+}
+.mytable
+{
+background-color:lightgrey;
+}
+*{
+text-align:center;
+}
+</style>
+<script language="javascript">
+function f1(value)
+{
+if(value=="start")
+{
+document.getElementById("greenbutton").style.background="green";
+document.getElementById("yellowbutton").style.background="black";
+document.getElementById("redbutton").style.background="black";
+}
+else if(value=="stop")
+{
+document.getElementById("greenbutton").style.background="black";
+document.getElementById("yellowbutton").style.background="black";
+document.getElementById("redbutton").style.background="red";
+}
+else if(value=="slow")
+{
+document.getElementById("greenbutton").style.background="black";
+document.getElementById("yellowbutton").style.background="yellow";
+document.getElementById("redbutton").style.background="black";
+}
+else
+{
+document.getElementById("greenbutton").style.background="black";
+document.getElementById("yellowbutton").style.background="black";
+document.getElementById("redbutton").style.background="black";
+}
+}
+</script>
+</head>
+<body>
+<br><br>
+<table class="mytable" align="center" width=20%>
+<tr><td><input type="button" class="mybutton" id="redbutton"></td></tr>
+<table class="mytable" align="center" width=20%>
+<tr><td><input type="button" class="mybutton" id="yellowbutton"></td></tr>
+<table class="mytable" align="center" width=20%>
+<tr><td><input type="button" class="mybutton" id="greenbutton"></td></tr>
+</table>
+<br><br>
+<button style="font-size:22px" onClick="f1('stop')">stop</button>
+<button style="font-size:22px" onClick="f1('slow')">slow</button>
+<button style="font-size:22px" onClick="f1('start')">start</button><br><br>
+<button style="font-size:22px" onClick="f1('reset')">reset</button>
+</body>
+</html>
+
+
+

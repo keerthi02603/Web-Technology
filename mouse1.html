@@ -1,0 +1,29 @@
+<html>
+    <head>
+    <title>js title</title>
+        <script Language="javaScript">
+            function f1(imageid)
+            {
+           document.getElementById(imageid).width="500";
+           }
+           function f2(imageid)
+           {
+           document.getElementById(imageid).width="300";
+           }
+           
+           </script>
+          </head>
+          </body>
+          <center>
+          <br><br><br><br>
+          <img src="a.png" width="500" id="myImage1"  onMouseOver="f1('myImage1')"
+          onMouseOut="f2('myImage1')">
+          <br><br><br><br>
+          <img src="b.png" width="500" id="myImage2"  onMouseOver="f1('myImage2')"
+          onMouseOut="f2('myImage2')">
+         
+          
+          </center>
+          </body>
+          </html>
+      
